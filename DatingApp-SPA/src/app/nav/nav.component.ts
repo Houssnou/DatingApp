@@ -17,11 +17,10 @@ export class NavComponent implements OnInit {
 
   /* login method */
   login () {
-    console.log(this.model);
     this.authService.login(this.model).subscribe(next => {
       console.log('Successfully Logged in!');
     }, error => {
-      console.log('Failed to log in!');
+      console.log(error);
     });
   }
 
