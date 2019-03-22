@@ -19,8 +19,8 @@
 .member-icons {
   position: absolute;
   bottom: -30%;
-  left: 0;
-  right: 0;
+  left: 0px;
+  right: 0px;
   margin-right: auto;
   margin-left: auto;
   opacity: 0;
