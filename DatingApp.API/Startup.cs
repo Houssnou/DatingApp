@@ -38,7 +38,7 @@ namespace DatingApp.API
     {
       services.AddDbContext<DataContext>(x => x
               //.UseMySql(Configuration.GetConnectionString("DefaultConnection"))
-                .UseMySql("Server=localhost; Database=datingapp; Uid=root; Pwd=@Watinoma00")
+                .UseMySql(Configuration.GetConnectionString("DefaultConnection"))
                .ConfigureWarnings(warnings => warnings.Ignore(CoreEventId.IncludeIgnoredWarning)));
       services.AddMvc()
               .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
